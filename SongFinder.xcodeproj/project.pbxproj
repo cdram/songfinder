@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0CD8CBF1479643400DF899E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD8CBE1479643400DF899E /* UIKit.framework */; };
+		A0CD8CC11479643400DF899E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD8CC01479643400DF899E /* Foundation.framework */; };
+		A0CD8CC31479643400DF899E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD8CC21479643400DF899E /* CoreGraphics.framework */; };
+		A0CD8CC91479643400DF899E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0CD8CC71479643400DF899E /* InfoPlist.strings */; };
+		A0CD8CCB1479643400DF899E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD8CCA1479643400DF899E /* main.m */; };
+		A0CD8CCF1479643400DF899E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD8CCE1479643400DF899E /* AppDelegate.m */; };
+		A0CD8CD21479643400DF899E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CD8CD01479643400DF899E /* MainStoryboard.storyboard */; };
+		A0CD8CD51479643400DF899E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD8CD41479643400DF899E /* ViewController.m */; };
+		A0CD8CDD1479643400DF899E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD8CDC1479643400DF899E /* SenTestingKit.framework */; };
+		A0CD8CDE1479643400DF899E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD8CBE1479643400DF899E /* UIKit.framework */; };
+		A0CD8CDF1479643400DF899E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CD8CC01479643400DF899E /* Foundation.framework */; };
+		A0CD8CE71479643400DF899E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0CD8CE51479643400DF899E /* InfoPlist.strings */; };
+		A0CD8CEA1479643400DF899E /* SongFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CD8CE91479643400DF899E /* SongFinderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0CD8CE01479643400DF899E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0CD8CB11479643400DF899E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0CD8CB91479643400DF899E;
+			remoteInfo = SongFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0CD8CBA1479643400DF899E /* SongFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CD8CBE1479643400DF899E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A0CD8CC01479643400DF899E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0CD8CC21479643400DF899E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A0CD8CC61479643400DF899E /* SongFinder-Info.plist */ = {isa = PBXFileReference; path = "SongFinder-Info.plist"; sourceTree = "<group>"; };
+		A0CD8CC81479643400DF899E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0CD8CCA1479643400DF899E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0CD8CCC1479643400DF899E /* SongFinder-Prefix.pch */ = {isa = PBXFileReference; path = "SongFinder-Prefix.pch"; sourceTree = "<group>"; };
+		A0CD8CCD1479643400DF899E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0CD8CCE1479643400DF899E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0CD8CD11479643400DF899E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A0CD8CD31479643400DF899E /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A0CD8CD41479643400DF899E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0CD8CDB1479643400DF899E /* SongFinderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongFinderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CD8CDC1479643400DF899E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A0CD8CE41479643400DF899E /* SongFinderTests-Info.plist */ = {isa = PBXFileReference; path = "SongFinderTests-Info.plist"; sourceTree = "<group>"; };
+		A0CD8CE61479643400DF899E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0CD8CE81479643400DF899E /* SongFinderTests.h */ = {isa = PBXFileReference; path = SongFinderTests.h; sourceTree = "<group>"; };
+		A0CD8CE91479643400DF899E /* SongFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongFinderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0CD8CB71479643400DF899E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CD8CBF1479643400DF899E /* UIKit.framework in Frameworks */,
+				A0CD8CC11479643400DF899E /* Foundation.framework in Frameworks */,
+				A0CD8CC31479643400DF899E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CD8CD71479643400DF899E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CD8CDD1479643400DF899E /* SenTestingKit.framework in Frameworks */,
+				A0CD8CDE1479643400DF899E /* UIKit.framework in Frameworks */,
+				A0CD8CDF1479643400DF899E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0CD8CAF1479643400DF899E = {
+			isa = PBXGroup;
+			children = (
+				A0CD8CC41479643400DF899E /* SongFinder */,
+				A0CD8CE21479643400DF899E /* SongFinderTests */,
+				A0CD8CBD1479643400DF899E /* Frameworks */,
+				A0CD8CBB1479643400DF899E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0CD8CBB1479643400DF899E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0CD8CBA1479643400DF899E /* SongFinder.app */,
+				A0CD8CDB1479643400DF899E /* SongFinderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0CD8CBD1479643400DF899E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0CD8CBE1479643400DF899E /* UIKit.framework */,
+				A0CD8CC01479643400DF899E /* Foundation.framework */,
+				A0CD8CC21479643400DF899E /* CoreGraphics.framework */,
+				A0CD8CDC1479643400DF899E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0CD8CC41479643400DF899E /* SongFinder */ = {
+			isa = PBXGroup;
+			children = (
+				A0CD8CCD1479643400DF899E /* AppDelegate.h */,
+				A0CD8CCE1479643400DF899E /* AppDelegate.m */,
+				A0CD8CD01479643400DF899E /* MainStoryboard.storyboard */,
+				A0CD8CD31479643400DF899E /* ViewController.h */,
+				A0CD8CD41479643400DF899E /* ViewController.m */,
+				A0CD8CC51479643400DF899E /* Supporting Files */,
+			);
+			path = SongFinder;
+			sourceTree = "<group>";
+		};
+		A0CD8CC51479643400DF899E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0CD8CC61479643400DF899E /* SongFinder-Info.plist */,
+				A0CD8CC71479643400DF899E /* InfoPlist.strings */,
+				A0CD8CCA1479643400DF899E /* main.m */,
+				A0CD8CCC1479643400DF899E /* SongFinder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0CD8CE21479643400DF899E /* SongFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0CD8CE81479643400DF899E /* SongFinderTests.h */,
+				A0CD8CE91479643400DF899E /* SongFinderTests.m */,
+				A0CD8CE31479643400DF899E /* Supporting Files */,
+			);
+			path = SongFinderTests;
+			sourceTree = "<group>";
+		};
+		A0CD8CE31479643400DF899E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0CD8CE41479643400DF899E /* SongFinderTests-Info.plist */,
+				A0CD8CE51479643400DF899E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0CD8CB91479643400DF899E /* SongFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0CD8CED1479643400DF899E /* Build configuration list for PBXNativeTarget "SongFinder" */;
+			buildPhases = (
+				A0CD8CB61479643400DF899E /* Sources */,
+				A0CD8CB71479643400DF899E /* Frameworks */,
+				A0CD8CB81479643400DF899E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SongFinder;
+			productName = SongFinder;
+			productReference = A0CD8CBA1479643400DF899E /* SongFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0CD8CDA1479643400DF899E /* SongFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0CD8CF01479643400DF899E /* Build configuration list for PBXNativeTarget "SongFinderTests" */;
+			buildPhases = (
+				A0CD8CD61479643400DF899E /* Sources */,
+				A0CD8CD71479643400DF899E /* Frameworks */,
+				A0CD8CD81479643400DF899E /* Resources */,
+				A0CD8CD91479643400DF899E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0CD8CE11479643400DF899E /* PBXTargetDependency */,
+			);
+			name = SongFinderTests;
+			productName = SongFinderTests;
+			productReference = A0CD8CDB1479643400DF899E /* SongFinderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0CD8CB11479643400DF899E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A0CD8CB41479643400DF899E /* Build configuration list for PBXProject "SongFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0CD8CAF1479643400DF899E;
+			productRefGroup = A0CD8CBB1479643400DF899E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0CD8CB91479643400DF899E /* SongFinder */,
+				A0CD8CDA1479643400DF899E /* SongFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0CD8CB81479643400DF899E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CD8CC91479643400DF899E /* InfoPlist.strings in Resources */,
+				A0CD8CD21479643400DF899E /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CD8CD81479643400DF899E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CD8CE71479643400DF899E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0CD8CD91479643400DF899E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0CD8CB61479643400DF899E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CD8CCB1479643400DF899E /* main.m in Sources */,
+				A0CD8CCF1479643400DF899E /* AppDelegate.m in Sources */,
+				A0CD8CD51479643400DF899E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CD8CD61479643400DF899E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CD8CEA1479643400DF899E /* SongFinderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0CD8CE11479643400DF899E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0CD8CB91479643400DF899E /* SongFinder */;
+			targetProxy = A0CD8CE01479643400DF899E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0CD8CC71479643400DF899E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0CD8CC81479643400DF899E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A0CD8CD01479643400DF899E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0CD8CD11479643400DF899E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		A0CD8CE51479643400DF899E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0CD8CE61479643400DF899E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0CD8CEB1479643400DF899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0CD8CEC1479643400DF899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0CD8CEE1479643400DF899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SongFinder/SongFinder-Prefix.pch";
+				INFOPLIST_FILE = "SongFinder/SongFinder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A0CD8CEF1479643400DF899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SongFinder/SongFinder-Prefix.pch";
+				INFOPLIST_FILE = "SongFinder/SongFinder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A0CD8CF11479643400DF899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SongFinder.app/SongFinder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SongFinder/SongFinder-Prefix.pch";
+				INFOPLIST_FILE = "SongFinderTests/SongFinderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A0CD8CF21479643400DF899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SongFinder.app/SongFinder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SongFinder/SongFinder-Prefix.pch";
+				INFOPLIST_FILE = "SongFinderTests/SongFinderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0CD8CB41479643400DF899E /* Build configuration list for PBXProject "SongFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CD8CEB1479643400DF899E /* Debug */,
+				A0CD8CEC1479643400DF899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0CD8CED1479643400DF899E /* Build configuration list for PBXNativeTarget "SongFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CD8CEE1479643400DF899E /* Debug */,
+				A0CD8CEF1479643400DF899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A0CD8CF01479643400DF899E /* Build configuration list for PBXNativeTarget "SongFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CD8CF11479643400DF899E /* Debug */,
+				A0CD8CF21479643400DF899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0CD8CB11479643400DF899E /* Project object */;
+}
