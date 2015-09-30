@@ -7,17 +7,72 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
+static NSString * kapp = @"270284756355217";
 
 @implementation AppDelegate
 
+
 @synthesize window = _window;
+@synthesize facebook;
+@synthesize viewController;
+@synthesize navigationController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    facebook = [[Facebook alloc] initWithAppId:kapp andDelegate:self];
+    
+    if(!kapp)
+    {
+        NSLog(@"%@",kapp);
+    }
+    else
+    {
+        NSLog(@"App ID Success");
+    }
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"FBAccessTokenKey"] 
+        && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
+        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+    }
+    
+    if (![facebook isSessionValid]) {
+        NSArray *permissions = [[NSArray alloc] initWithObjects:
+                                @"user_likes", 
+                                @"read_stream",
+                                nil];
+        [facebook authorize:permissions];
+        [permissions release];
+    }
+    
+    [self.navigationController setViewControllers:[NSArray arrayWithObjects:viewController,nil] animated:YES];
+    [self.window addSubview:navigationController.view];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
-							
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [self.facebook handleOpenURL:url];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [self.facebook handleOpenURL:url];
+}
+
+- (void)fbDidLogin {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
+    [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
